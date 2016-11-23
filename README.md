@@ -74,7 +74,7 @@ float sdCylinder( vec3 p, vec3 c )
 
 ### Cone - signed - exact
 
-![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx05.png)
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx09.png)
 
 ```
 float sdCone( vec3 p, vec2 c )
@@ -87,7 +87,7 @@ float sdCone( vec3 p, vec2 c )
 
 ### Plane - signed - exact
 
-![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx06.png)
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx10.png)
 
 ```
 float sdPlane( vec3 p, vec4 n )
@@ -99,7 +99,7 @@ float sdPlane( vec3 p, vec4 n )
 
 ### Hexagonal Prism - signed - exact
 
-![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx07.png)
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx11.png)
 
 ```
 float sdHexPrism( vec3 p, vec2 h )
@@ -111,7 +111,7 @@ float sdHexPrism( vec3 p, vec2 h )
 
 ### Triangular Prism - signed - exact
 
-![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx08.png)
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx21.png)
 
 ```
 float sdTriPrism( vec3 p, vec2 h )
@@ -123,7 +123,7 @@ float sdTriPrism( vec3 p, vec2 h )
 
 ### Capsule / Line - signed - exact
 
-![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx09.png)
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx22.png)
 
 ```
 float sdCapsule( vec3 p, vec3 a, vec3 b, float r )
@@ -136,7 +136,7 @@ float sdCapsule( vec3 p, vec3 a, vec3 b, float r )
 
 ### Capped cylinder - signed - exact
 
-![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx10.png)
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx23.png)
 
 ```
 float sdCappedCylinder( vec3 p, vec2 h )
