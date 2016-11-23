@@ -25,3 +25,49 @@ float udBox( vec3 p, vec3 b )
   return length(max(abs(p)-b,0.0));
 }
 ```
+
+### Round Box - unsigned - exact
+
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx02.png)
+
+```
+float udRoundBox( vec3 p, vec3 b, float r )
+{
+  return length(max(abs(p)-b,0.0))-r;
+}
+```
+
+### Box - signed - exact
+
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx03.png)
+
+```
+float sdBox( vec3 p, vec3 b )
+{
+  vec3 d = abs(p) - b;
+  return min(max(d.x,max(d.y,d.z)),0.0) + length(max(d,0.0));
+}
+```
+
+### Torus - signed - exact
+
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx04.png)
+
+```
+float sdTorus( vec3 p, vec2 t )
+{
+  vec2 q = vec2(length(p.xz)-t.x,p.y);
+  return length(q)-t.y;
+}
+```
+
+### Cylinder - signed - exact
+
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx05.png)
+
+```
+float sdCylinder( vec3 p, vec3 c )
+{
+  return length(p.xz-c.xy)-c.z;
+}
+```
