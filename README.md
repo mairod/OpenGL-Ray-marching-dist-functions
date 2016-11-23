@@ -240,7 +240,9 @@ float sdEllipsoid( in vec3 p, in vec3 r )
 }
 ```
 
-## Operations
+# Operations
+
+## distance operations
 
 ### Union
 
@@ -274,6 +276,8 @@ float opI( float d1, float d2 )
     return max(d1,d2);
 }
 ```
+
+## domain operations
 
 ### Repetition
 
