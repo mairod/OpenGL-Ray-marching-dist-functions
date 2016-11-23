@@ -242,7 +242,7 @@ float sdEllipsoid( in vec3 p, in vec3 r )
 
 # Operations
 
-## distance operations
+## Distance operations
 
 ### Union
 
@@ -277,7 +277,7 @@ float opI( float d1, float d2 )
 }
 ```
 
-## domain operations
+## Domain operations
 
 ### Repetition
 
@@ -312,5 +312,67 @@ vec3 opTx( vec3 p, mat4 m )
 float opScale( vec3 p, float s )
 {
     return primitive(p/s)*s;
+}
+```
+
+# Deformations
+
+## Distance deformations
+
+### Displacement
+
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx15.png)
+
+```
+float opDisplace( vec3 p )
+{
+    float d1 = primitive(p);
+    float d2 = displacement(p);
+    return d1+d2;
+}
+```
+
+### Blend
+
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx18.png)
+
+```
+float opBlend( vec3 p )
+{
+    float d1 = primitiveA(p);
+    float d2 = primitiveB(p);
+    return smin( d1, d2 );
+}
+```
+
+## Domain deformations
+
+### Twist
+
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx16.png)
+
+```
+float opTwist( vec3 p )
+{
+    float c = cos(20.0*p.y);
+    float s = sin(20.0*p.y);
+    mat2  m = mat2(c,-s,s,c);
+    vec3  q = vec3(m*p.xz,p.y);
+    return primitive(q);
+}
+```
+
+### Cheap Bend
+
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx17.png)
+
+```
+float opCheapBend( vec3 p )
+{
+    float c = cos(20.0*p.y);
+    float s = sin(20.0*p.y);
+    mat2  m = mat2(c,-s,s,c);
+    vec3  q = vec3(m*p.xy,p.z);
+    return primitive(q);
 }
 ```
