@@ -39,7 +39,7 @@ float udRoundBox( vec3 p, vec3 b, float r )
 
 ### Box - signed - exact
 
-![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx03.png)
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx01.png)
 
 ```
 float sdBox( vec3 p, vec3 b )
@@ -51,7 +51,7 @@ float sdBox( vec3 p, vec3 b )
 
 ### Torus - signed - exact
 
-![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx04.png)
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx03.png)
 
 ```
 float sdTorus( vec3 p, vec2 t )
@@ -63,7 +63,7 @@ float sdTorus( vec3 p, vec2 t )
 
 ### Cylinder - signed - exact
 
-![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx05.png)
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx04.png)
 
 ```
 float sdCylinder( vec3 p, vec3 c )
