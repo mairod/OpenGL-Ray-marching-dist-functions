@@ -14,3 +14,14 @@ float sdSphere( vec3 p, float s )
   return length(p)-s;
 }
 ```
+
+### Box - unsigned - exact
+
+![alt tag](http://www.iquilezles.org/www/articles/distfunctions/gfx01.png)
+
+```
+float udBox( vec3 p, vec3 b )
+{
+  return length(max(abs(p)-b,0.0));
+}
+```
