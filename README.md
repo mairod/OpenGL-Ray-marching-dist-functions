@@ -1,6 +1,6 @@
 # OpenGL-Ray-marching-dist-functions
 
-Thoses functions are from the [iquilezles](http://www.dropwizard.io/1.0.2/docs/) article, and just stored here. Don't hesitate to have look on his blog, this guy did an amazing work !
+Thoses functions are from the [iquilezles](http://www.iquilezles.org/www/articles/distfunctions/distfunctions.htm) article, and just stored here. Don't hesitate to have look on his blog, this guy did an amazing work !
 
 ## Primitives
 
